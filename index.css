@@ -5,6 +5,8 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    width: 1440px;
+    height: 1024px;
 }
 .center{
     padding-left: calc(50% - 600px);
@@ -27,6 +29,7 @@ body{
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
 }
 .heading{
+    max-width: 700px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -36,9 +39,10 @@ body{
     line-height: 78px;
     display: flex;
     align-items: center;
-    color: grey;
+    color: #FFFFFF;
 }
 .descrip{
+    max-width: 500px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -48,7 +52,7 @@ body{
     line-height: 32px;
     display: flex;
     align-items: center;
-    color: grey;
+    color: #FFFFFF;
 }
 .but{
     background: #9C0332;
@@ -69,6 +73,7 @@ body{
     justify-content: center ;
 }
 .head{
+    width: 100%;
     padding-top: 128px;
     padding-bottom: 128px;
     background: #000915;
@@ -80,6 +85,7 @@ body{
     grid-template-columns: repeat(12, 1fr);
 }
 .for_item{
+    padding: 32px;
     height: 300px;
     width: 378px;
     grid-column: span 4;
@@ -98,16 +104,22 @@ body{
 .game_1{
     background: url(./img/man1.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
-    border-radius: 16px;
+    border-radius: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .game_2{
     background: url(./img/man2.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
-    border-radius: 16px
+    border-radius: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .game_3{
     background: url(./img/girl.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
-    border-radius: 16px
+    border-radius: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
