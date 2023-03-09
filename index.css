@@ -1,10 +1,15 @@
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .center {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .top1 {
-    height: 735px;
+  .heading {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    align-items: center;
   }
 }
 * {
@@ -22,9 +27,8 @@ body {
 }
 
 .top1 {
-  width: 1440px;
   height: 1024px;
-  background: url(./img/logo.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
+  background: url(img/logo.svg.svg), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -86,7 +90,7 @@ body {
 }
 
 .head {
-  width: 1440px;
+  max-width: 1400px;
   padding-bottom: 128px;
   padding-top: 128px;
   background: #000915;
@@ -102,7 +106,7 @@ body {
 .for_item {
   padding: 32px;
   height: 300px;
-  width: 378px;
+  max-width: 378px;
   grid-column: span 4;
   font-style: normal;
   font-weight: 600;

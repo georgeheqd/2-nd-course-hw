@@ -31,14 +31,14 @@ alert(num);*/
 /*let age = prompt("Сколько вам лет?");
 alert(age);*/
 
-/*let user = {
+const user = {
     Name: 'George',
     Age: 20,
     isAdmin: true,
     city_of_residence: String(Kazan),
     info: prompt("Какую информацию хотите узнать о пользователе?")
 };
-alert(user.info);*/
+alert(user.info);
 
-let data = prompt("Назовите имя и фамилию");
-alert("Привет ! " + data);
+/*let data = prompt("Назовите имя и фамилию");
+alert("Привет ! " + data);*/
