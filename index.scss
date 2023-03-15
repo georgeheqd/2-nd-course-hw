@@ -77,8 +77,13 @@ body{
     background: #000915;
 }
 .for{
+    max-width: 1200px;
     margin-top: 32px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    align-content: center;
+    justify-content: center;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -100,14 +105,15 @@ body{
     flex-wrap: wrap;
 }
 .game_1{
+    width: 378px;
     background: url(./img/man1.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
     border-radius: 22px;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .game_2{
+    width: 378px;
     background: url(./img/man2.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
     border-radius: 22px;
@@ -115,6 +121,7 @@ body{
     background-size: cover;
 }
 .game_3{
+    width: 378px;
     background: url(./img/girl.jpg),
     linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
     border-radius: 22px;

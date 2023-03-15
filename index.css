@@ -1,15 +1,72 @@
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .heading {
-    display: flex;
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
     align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .descrip {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .for {
+    max-width: 1200px;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .but {
+    background: #9C0332;
+    border-radius: 30px;
+    width: 234px;
+    height: 48px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content_up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
 * {
@@ -97,19 +154,25 @@ body {
 }
 
 .for {
+  max-width: 1200px;
   margin-top: 32px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
 }
 
 .for_item {
+  transition: all;
   padding: 32px;
   height: 300px;
   max-width: 378px;
   grid-column: span 4;
   font-style: normal;
   font-weight: 600;
+  animation: shadow-drop-2-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: flex;
   align-items: flex-end;
   text-align: center;
@@ -122,6 +185,7 @@ body {
 }
 
 .game_1 {
+  width: 378px;
   background: url(./img/man1.jpg), linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
   border-radius: 22px;
   background-repeat: no-repeat;
@@ -129,6 +193,7 @@ body {
 }
 
 .game_2 {
+  width: 378px;
   background: url(./img/man2.jpg), linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
   border-radius: 22px;
   background-repeat: no-repeat;
@@ -136,6 +201,7 @@ body {
 }
 
 .game_3 {
+  width: 378px;
   background: url(./img/girl.jpg), linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
   border-radius: 22px;
   background-repeat: no-repeat;

@@ -36,7 +36,9 @@ const user = {
     Age: 20,
     isAdmin: true,
     city_of_residence: String(Kazan),
-    info: prompt("Какую информацию хотите узнать о пользователе?")
+    info: function(){
+        return prompt("Какую информацию хотите узнать о пользователе?")
+    }
 };
 alert(user.info);
 
