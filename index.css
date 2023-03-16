@@ -52,6 +52,10 @@ body {
   color: #FFFFFF;
 }
 
+.heading_mid {
+  margin-top: 0;
+}
+
 .descrip {
   max-width: 500px;
   font-family: "Montserrat";
@@ -128,6 +132,8 @@ body {
   line-height: 32px;
   flex-direction: row;
   flex-wrap: wrap;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
 }
 .for_item:hover {
   text-decoration: underline;
@@ -159,6 +165,16 @@ body {
 
 .neck {
   background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.picture {
+  background-image: url(./img/game_svg.svg);
+  width: 485px;
+  height: 333px;
 }
 
 @media (max-width: 768px) {
