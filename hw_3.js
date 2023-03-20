@@ -21,7 +21,7 @@ if ((d || e) > 100) {
 /*let a = number('2');
 let b = number('3');
 alert(a + b);*/
-
+/*
 let monthNumber = Number(prompt('месяц'));
 switch (monthNumber) {
 	case 1:
@@ -63,3 +63,31 @@ switch (monthNumber) {
 	default: console.log('неверно');
 		break;
 }
+*/
+/*
+let monthNumber = 1;
+
+while (monthNumber <= 12) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    }
+	monthNumber++;
+}
+for (let monthNumber = 1; monthNumber <= 12; monthNumber++) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    }
+}
+*/
