@@ -7,8 +7,17 @@ while(true) { // бесконечный цик
 	if (msg === 'break') { // если break
 		break; // прекращвем выполнение цикла
 	}
+}/*
+let i = 0;         
+while
+(i< 2) {console.log("Привет");
+    i++;
 }
-while (true) console.log('Привет!');
+let i = 7;
+while(i <= 22){
+	console.log(i);
+	i++;
+}
 
 let i = 0;
 
@@ -16,6 +25,7 @@ while (i < 5) {
 	console.log(i);
 	i++;
 }
+*/
 const obj = {
 		'Лима': 'Перу',
 		'Джакарта': 'Индонезия',
@@ -40,7 +50,7 @@ for (let dayNumber = 5; dayNumber >= 5; dayNumber = +5) {
 for (let dayNumber = 1; dayNumber <= 31; dayNumber++) {
     if (dayNumber == 5) {
         console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.");
-    } else if (dayNumber ===12) {
+    } else if (dayNumber === 12) {
         console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.");
     } else if (dayNumber === 19 ) {
         console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.");
