@@ -44,10 +44,12 @@ while(n >= 50) {
 }
 console.log(sum)
 
-for (let dayNumber = 5; dayNumber >= 5; dayNumber = +5) {
+/*
+for (let dayNumber = firstFriday; dayNumber >= 5; dayNumber += 7) {
 	console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.")
-}
-for (let dayNumber = 1; dayNumber <= 31; dayNumber++) {
+}*/
+firstFriday = 5;
+for (let dayNumber = firstFriday; dayNumber <= 31; dayNumber += 7) {
     if (dayNumber == 5) {
         console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.");
     } else if (dayNumber === 12) {
@@ -57,4 +59,5 @@ for (let dayNumber = 1; dayNumber <= 31; dayNumber++) {
     } else if (dayNumber === 26) {
         console.log("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет.");
     }
+	break;
 }
