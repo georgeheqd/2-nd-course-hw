@@ -41,7 +41,7 @@ function getRectangleArea() {
   console.log(square2.getPerimeter());
   */
  function comp(a, b) {
-    if (a > b) {
+    if (a => b) {
         return a;
     }
     else if (a < b) {
@@ -56,23 +56,49 @@ function getRectangleArea() {
  let b = prompt('Число');
 
 
- console.log(comp());
+ console.log(comp(a, b));
 
- "use strict";
+
 let numb = prompt("Число");
 
-let printMessage;
-
-if (numb % 2 == 0) {
-
-    printMessage = function () {
-        console.log("Четное");
-    }
-
-} else {
-
-    printMessage = function () {
-        console.log("Нечетное");
-    }
-
+function checkNumber(num) {
+     
+  if (numb % 2 == 0) {
+          console.log("Четное");
+  } else {
+          console.log("Нечетое");
+  }
 }
+
+checkNumber(promt("Число"))
+
+
+    let age = prompt("Сколько Вам лет?", 18);
+
+    let welcome;
+    
+    if (age <= 0) {
+    
+      welcome = function() {
+        alert("Вы ввели неправильное значение!");
+      };
+    
+    } else if (age <= 12) {
+    
+      welcome = function() {
+        alert("Привет, друг!");
+      };
+    
+    } else if (age >= 13) {
+        welcome = function() {
+            alert("Добро пожаловать!");
+    }
+    }
+    welcome();
+
+    function func(num) {
+        return num ** 2;
+    }
+    function func(num) {
+        console.log(num ** 2);
+    }
