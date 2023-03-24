@@ -1,12 +1,12 @@
-/*let number = 10;
-alert(number)
-number += 10;
-alert(number)*/
+/*let a = 10;
+alert(a)
+a += 10;
+alert(a)*/
 
 /*let age = "29.06.2007";
 alert("Дата выходы первого айфона " + age) ; */
 /*let Name = "Брендан Айк"
-alert("имя создателя языка JavaScript = " + Name)*/
+alert("именz создателя языка JavaScript = " + Name)*/
 
 /*let a = 10;
 let b = 2;
@@ -25,8 +25,8 @@ num += 5;
 num -+ 3;
 num *= 7;
 num /= 3;
-num++;
-num--;
+num ++;
+num --;
 alert(num);*/
 /*let age = prompt("Сколько вам лет?");
 alert(age);*/
@@ -36,7 +36,9 @@ const user = {
     Age: 20,
     isAdmin: true,
     city_of_residence: String(Kazan),
-    info: prompt("Какую информацию хотите узнать о пользователе?")
+    info: function(){
+        return prompt("Какую информацию хотите узнать о пользователе?")
+    }
 };
 alert(user.info);
 
