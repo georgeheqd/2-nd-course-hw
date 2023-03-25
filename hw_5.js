@@ -72,29 +72,18 @@ function checkNumber(num) {
 
 checkNumber(promt("Число"))
 
+function welcome(age){
+  if (age <= 0) {
+	    alert("Вы ввели неправильное значение!");
+  } else if (age <= 12) {
+	    alert("Привет, друг!");
+  } else {
+	    alert("Добро пожаловать!");
+}
+}
+let age = prompt("Сколько Вам лет?", 18);
 
-    let age = prompt("Сколько Вам лет?", 18);
-
-    let welcome;
-    
-    if (age <= 0) {
-    
-      welcome = function() {
-        alert("Вы ввели неправильное значение!");
-      };
-    
-    } else if (age <= 12) {
-    
-      welcome = function() {
-        alert("Привет, друг!");
-      };
-    
-    } else if (age >= 13) {
-        welcome = function() {
-            alert("Добро пожаловать!");
-    }
-    }
-    welcome();
+welcome(age);
 
     function func(num) {
         return num ** 2;
@@ -102,3 +91,21 @@ checkNumber(promt("Число"))
     function func(num) {
         console.log(num ** 2);
     }
+
+const circle1 = {
+  radius: 5,
+  pi: 4.14,
+  getArea: getRectangleArea,
+  getPerimeter: getRectanglePerimeter,
+
+}
+
+function getRectangleArea(circle1) {
+	console.log(this.radius * this.pi);
+}
+getRectangleArea(circle1);
+
+function getRectanglePerimeter(circle1) {
+	console.log(2 * this.radius + this.pi);
+}
+getRectanglePerimeter(circle1);
