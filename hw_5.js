@@ -100,12 +100,38 @@ const circle1 = {
 
 }
 
-function getRectangleArea(circle1) {
+function getRectangleArea() {
 	console.log(this.radius * this.pi);
 }
-getRectangleArea(circle1);
+circle1.getRectangleArea()
 
-function getRectanglePerimeter(circle1) {
+function getRectanglePerimeter() {
 	console.log(2 * this.radius + this.pi);
 }
-getRectanglePerimeter(circle1);
+circle1.getRectanglePerimeter()
+
+
+function checkNumbers(firtsNum, secondNum){
+  if ((checkNumbers) === Number ) {
+    alert(this.firtsNum + this.secondNum);
+  }
+  else if (checkNumbers === String ) {
+    alert('${firtsNum} + ${secondNum}');
+  }
+  else if (checkNumbers != Number ) {
+    alert("Одно или оба значения не являются числом")
+  }
+}
+
+checkNumbers(1,2)
+
+checkNumbers('1', 'hello')
+
+
+let n = prompt('Число');
+
+function cubeNumber(number){
+  result = math.pow(n, 3)
+
+  return `n в кубе равняется ${result}` 
+}
