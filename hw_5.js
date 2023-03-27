@@ -95,8 +95,10 @@ welcome(age);
 const circle1 = {
   radius: 5,
   pi: 4.14,
-  getArea: getRectangleArea,
-  getPerimeter: getRectanglePerimeter,
+  /*getArea: getRectangleArea,*/
+  getArea:circle1.getArea(),
+  getPerimeter:circle1.getPerimeter()
+  /*getPerimeter: getRectanglePerimeter,*/
 
 }
 
@@ -112,7 +114,7 @@ circle1.getRectanglePerimeter()
 
 
 function checkNumbers(firtsNum, secondNum){
-  if ((checkNumbers) === Number ) {
+  if ((checkNumbers) === isNaN ) {
     alert(this.firtsNum + this.secondNum);
   }
   else if (checkNumbers === String ) {
@@ -131,7 +133,8 @@ checkNumbers('1', 'hello')
 let n = prompt('Число');
 
 function cubeNumber(number){
-  result = math.pow(n, 3)
+  const result = math.pow(number, 3)
 
   return `n в кубе равняется ${result}` 
 }
+cubeNumber(n)
