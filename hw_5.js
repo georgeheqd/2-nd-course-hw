@@ -137,4 +137,4 @@ function cubeNumber(number){
 
   return `n в кубе равняется ${result}` 
 }
-cubeNumber(n)
+cubeNumber(number)
