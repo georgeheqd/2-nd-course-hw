@@ -95,12 +95,11 @@ welcome(age);
 const circle1 = {
   radius: 5,
   pi: 4.14,
-  /*getArea: getRectangleArea,*/
-  getArea:circle1.getArea(),
-  getPerimeter:circle1.getPerimeter()
-  /*getPerimeter: getRectanglePerimeter,*/
+  getArea: getRectangleArea,
+  getPerimeter: getRectanglePerimeter,
 
 }
+circle1.getArea()
 
 function getRectangleArea() {
 	console.log(this.radius * this.pi);
@@ -120,9 +119,9 @@ function checkNumbers(firtsNum, secondNum){
   else if (checkNumbers === String ) {
     alert('${firtsNum} + ${secondNum}');
   }
-  else if (checkNumbers != Number ) {
+  if (isNaN(firtsNum) || isNaN(secondNum)) {
     alert("Одно или оба значения не являются числом")
-  }
+}
 }
 
 checkNumbers(1,2)
@@ -132,9 +131,39 @@ checkNumbers('1', 'hello')
 
 let n = prompt('Число');
 
-function cubeNumber(number){
+function cubeNumber(n){
   const result = math.pow(number, 3)
 
   return `n в кубе равняется ${result}` 
 }
-cubeNumber(number)
+cubeNumber(n)
+
+let monthNumber = 1;
+
+while (monthNumber <= 12) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    } else if (monthNumber <=0 && monthNumber >= 13){
+      console.log('Неверно');
+    }
+	monthNumber++;
+}
+for (let monthNumber = 1; monthNumber <= 12; monthNumber++) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    } else if (monthNumber <=0 && monthNumber >= 13){
+      console.log('Неверно');
+    }
+}
