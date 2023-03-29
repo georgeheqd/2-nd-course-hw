@@ -112,21 +112,16 @@ function getRectanglePerimeter() {
 circle1.getRectanglePerimeter()
 
 
-function checkNumbers(firtsNum, secondNum){
-  if ((checkNumbers) === isNaN ) {
-    alert(this.firtsNum + this.secondNum);
-  }
-  else if (checkNumbers === String ) {
-    alert('${firtsNum} + ${secondNum}');
-  }
+function checkNumbers(firtsNum, secondNum) {
   if (isNaN(firtsNum) || isNaN(secondNum)) {
-    alert("Одно или оба значения не являются числом")
-}
+    alert("Одно или оба значения не являются числом");
+  } else {
+    alert(firtsNum + secondNum);
+  }
 }
 
-checkNumbers(1,2)
-
-checkNumbers('1', 'hello')
+checkNumbers(1, 2);
+checkNumbers("1", "hello");
 
 
 let n = prompt('Число');
@@ -138,7 +133,7 @@ function cubeNumber(n){
 }
 cubeNumber(n)
 
-let monthNumber = 1;
+let monthNumber = prompt('Число');
 
 while (monthNumber <= 12) {
     if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
@@ -152,7 +147,6 @@ while (monthNumber <= 12) {
     } else if (monthNumber <=0 && monthNumber >= 13){
       console.log('Неверно');
     }
-	monthNumber++;
 }
 for (let monthNumber = 1; monthNumber <= 12; monthNumber++) {
     if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
