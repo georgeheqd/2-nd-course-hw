@@ -54,15 +54,27 @@ let newNums = []
 for (let item of nums) {
 	console.log(item);
 }
+
+
 */
+const arr = [2, 5, 8, 4, 10, 1, 7, 3, 9, 6]; // создаём массив с произвольными числами
 
-const arr = [20, 50, 100];
-
-const iterator = arr.keys();
-
-const sum = [];
-
-for (let key of iterator) {
-	sum.push(key);
+for (let i = 0; i < arr.length - 1; i++) {
+ const sum = arr[i] + arr[i + 1];
+ console.log(sum); // выводим в консоль сумму текущего и следующего элементов
 }
-console.log('', sum.reduce((a, b) => a + b));
+
+console.log(num([5,2,7]));  // 2
+ 
+function num(arr){
+    return Math.pow(arr);
+}
+
+
+let nameLength = ["Дом", "ЕЛЬ", "вода", "сводить", "Медведь12"]
+function nameLength(str) {
+    const words = str.split(" ");
+    return words.map(str => `${str} ${str.length}`);
+}
+
+console.log(nameLength());
