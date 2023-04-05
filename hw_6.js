@@ -2,8 +2,8 @@
 
 
 for (let i = 0; i < numbs.length; i++) {
-	if (numbs[i] == 10) break;
 	console.log(numbs[i]);
+	if (numbs[i] == 10) break;
 }
 
 const numbs = [1, 5, 4, 10, 0, 3];
@@ -27,20 +27,21 @@ for (let i = 0; i < 1; i++) {
 console.log(arr);
 
 let numbs = [1, 1, 1];
-numbs.push('2, 2, 2');
+numbs.push(2, 2, 2);
 console.log(numbs);
 
 let numbs = [9, 8, 7, 'a', 6, 5];
-numbs = numbs.sort
+numbs.sort()
+numbs.pop()
 numbs.splice(1, 1);
 alert(numbs);
 
-prompt('Число')
+const num = prompt('Введите число');
 
 const salary = [9, 8, 7, 6, 5];
 
 search = salary.includes(prompt);
-
+s
 console.log(search);
 
 let str="abcdef";
@@ -52,9 +53,9 @@ for(let i = str.length; i>0; i--) {
 let nums = [[1, 2, 3,],[4, 5, 6]];
 let newNums = []
 for (let item of nums) {
-	console.log(item);
+	newNums.flat()
 }
-
+console.log(item);
 
 */
 const arr = [2, 5, 8, 4, 10, 1, 7, 3, 9, 6]; // создаём массив с произвольными числами
@@ -64,7 +65,7 @@ for (let i = 0; i < arr.length - 1; i++) {
  console.log(sum); // выводим в консоль сумму текущего и следующего элементов
 }
 
-console.log(num([5,2,7]));  // 2
+console.log(num([5,2,7])); 
  
 function num(arr){
     return Math.pow(arr);
