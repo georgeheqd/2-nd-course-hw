@@ -1,31 +1,26 @@
-@-webkit-keyframes shadow-pop-tr {
+@-webkit-keyframes blink-2 {
     0% {
-      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-      -webkit-transform: translateX(0) translateY(0);
-              transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
     }
     100% {
-      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-      -webkit-transform: translateX(-8px) translateY(8px);
-              transform: translateX(-8px) translateY(8px);
+      opacity: 1;
     }
   }
-  @keyframes shadow-pop-tr {
+  @keyframes blink-2 {
     0% {
-      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-      -webkit-transform: translateX(0) translateY(0);
-              transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
     }
     100% {
-      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-      -webkit-transform: translateX(-8px) translateY(8px);
-              transform: translateX(-8px) translateY(8px);
+      opacity: 1;
     }
-  }  
+  }
+   
 * {
     margin: 0;
     padding: 0;
@@ -119,10 +114,7 @@ body{
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
 }
-.shadow-pop-tr {
-	-webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
+
 .for_item{
     padding: 32px;
     height: 300px;
@@ -131,8 +123,10 @@ body{
     font-style: normal;
     font-weight: 600;
     transition: all;
-    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: blink-2 0.9s both;
+    &:hover{
+        text-decoration: underline;
+    }
     display: flex;
     align-items: flex-end;
     text-align: center;
@@ -143,9 +137,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     text-decoration: auto;
-    &:hover{
-        text-decoration: underline;
-    }
 }
 .game_1{
     width: 378px;
@@ -181,6 +172,8 @@ body{
 .picture{
     background-image: url(./img/game_svg.svg);
     width:485px;
-    height:333px;
+    height: 334px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-@import 'mobile';
+@import 'mobile'

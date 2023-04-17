@@ -41,7 +41,7 @@ function getRectangleArea() {
   console.log(square2.getPerimeter());
   */
  function comp(a, b) {
-    if (a > b) {
+    if (a => b) {
         return a;
     }
     else if (a < b) {
@@ -56,23 +56,108 @@ function getRectangleArea() {
  let b = prompt('Число');
 
 
- console.log(comp());
+ console.log(comp(a, b));
 
- "use strict";
+
 let numb = prompt("Число");
 
-let printMessage;
+function checkNumber(num) {
+     
+  if (numb % 2 == 0) {
+          console.log("Четное");
+  } else {
+          console.log("Нечетое");
+  }
+}
 
-if (numb % 2 == 0) {
+checkNumber(promt("Число"))
 
-    printMessage = function () {
-        console.log("Четное");
+function welcome(age){
+  if (age <= 0) {
+	    alert("Вы ввели неправильное значение!");
+  } else if (age <= 12) {
+	    alert("Привет, друг!");
+  } else {
+	    alert("Добро пожаловать!");
+}
+}
+let age = prompt("Сколько Вам лет?", 18);
+
+welcome(age);
+
+    function func(num) {
+        return num ** 2;
+    }
+    function func(num) {
+        console.log(num ** 2);
     }
 
-} else {
+const circle1 = {
+  radius: 5,
+  pi: 4.14,
+  getArea: getRectangleArea,
+  getPerimeter: getRectanglePerimeter,
 
-    printMessage = function () {
-        console.log("Нечетное");
+}
+circle1.getArea()
+
+function getRectangleArea() {
+	console.log(this.radius * this.pi);
+}
+circle1.getRectangleArea()
+
+function getRectanglePerimeter() {
+	console.log(2 * this.radius + this.pi);
+}
+circle1.getRectanglePerimeter()
+
+
+function checkNumbers(firtsNum, secondNum) {
+  if (isNaN(firtsNum) || isNaN(secondNum)) {
+    alert("Одно или оба значения не являются числом");
+  } else {
+    alert(firtsNum + secondNum);
+  }
+}
+
+checkNumbers(1, 2);
+checkNumbers("1", "hello");
+
+
+let n = prompt('Число');
+
+function cubeNumber(n){
+  const result = math.pow(number, 3)
+
+  return `n в кубе равняется ${result}` 
+}
+cubeNumber(n)
+
+let monthNumber = prompt('Число');
+
+while (monthNumber <= 12) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    } else if (monthNumber <=0 && monthNumber >= 13){
+      console.log('Неверно');
     }
-
+}
+for (let monthNumber = 1; monthNumber <= 12; monthNumber++) {
+    if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+        console.log('Зима');
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        console.log('Весна');
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        console.log('Лето');
+    } else if (monthNumber >= 9 && monthNumber <= 11) {
+        console.log('Осень');
+    } else if (monthNumber <=0 && monthNumber >= 13){
+      console.log('Неверно');
+    }
 }
