@@ -68,8 +68,18 @@ for (let i = 0; i < arr.length - 1; i++) {
 console.log(num([5,2,7])); 
  
 function num(arr){
-    return Math.pow(arr);
+
+  return arr.map(Math.pow);
 }
+
+function getNegativeNumbers(array) {
+	return array.filter(number => number < 0);
+   }
+   
+   // Пример использования функции
+   const numbers = [-2, 3, -5, 7, -8, 10];
+   const negativeNumbers = getNegativeNumbers(numbers);
+   console.log(negativeNumbers); // [-2, -5, -8]
 
 
 let nameLength = ["Дом", "ЕЛЬ", "вода", "сводить", "Медведь12"]
