@@ -8,9 +8,9 @@ const playSeasonsGame = () => {
         "Апельсин",
         "Мандарин",
     ];
-let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arrList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 arr = arr.sort(() => Math.random() - 0.5);
-}
+alert(arr)
 let first = prompt('Чему равнялся первый элемент массива?',);
 alert(first)
 
@@ -18,13 +18,14 @@ let last = prompt('Чему равнялся последний элемент �
 alert(last)
 
 function right() {
-    if ((first == ) & (last == )) {
+    if ((first == arr[0]) & (last == arr[6])) {
         alert("Вы угадали оба елмента");
     }
-    else if ((first == ) || (last == )) {
+    else if ((first == arr[0]) & (last == arr[6])) {
         alert("Вы угадали один элемент");
     }
-    else ((first != ) & (last != )) {
+    else ((first == arr[0]) & (last == arr[6])) {
         alert("Вы не угадали ни одного элемента,");
     }
+}
 }
