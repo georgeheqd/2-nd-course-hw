@@ -18,7 +18,7 @@ alert(last)
 
 if (first === arr[0] && last === arr[arr.length - 1]) {
   alert("Вы угадали оба елмента");
-} else if (first === arr[0] && last === arr[arr.length - 1]) {
+} else if (first === arr[0] || last === arr[arr.length - 1]) {
   alert("Вы угадали один элемент");
 } else {
   alert("Вы не угадали ни одного элемента");
