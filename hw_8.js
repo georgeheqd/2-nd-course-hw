@@ -30,3 +30,10 @@
     
     console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
     
+
+
+function showTime() {
+   let currentDate = new Date();
+	let timerId = setInterval(() => alert(new Date), 3000);
+}
+
