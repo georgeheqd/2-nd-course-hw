@@ -4,8 +4,9 @@
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
- people.sort(function(a, b){
-    return a.age-b.age
+      const sortedPeople = people.sort((a, b) => a.age - b.age);
+
+      console.log(sortedPeople)
   })*/
 
   function isPositive(arr) {
@@ -13,13 +14,15 @@
     return posArr
     }
     function isMale() {
-        if
+      const male = (people.findIndex(gender => people.gender == 'male'));
+
+      console.log(male)
     }
     function filter() {
-    // писать код тут
+      let somePeople = people.filter(item => item.id >= 0);
     }
     
-    console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+    console.log(filter([3, -4, 1, 9], isPositive)); 
     
     const people = [
        {name: 'Глеб', gender: 'male'},
