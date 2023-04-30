@@ -40,3 +40,30 @@ function showTime() {
 	let timerId = setInterval(() => alert(new Date), 3000);
 }
 
+function delayForSecond(callback) {
+  setTimeout(cakkback, 1000 * 10);
+  callback();
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
+
+function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) { 	cb(); }
+
+  }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+  console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond(delayForSecond())
+delayForSecond(sayHi('Глеб'))

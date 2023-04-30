@@ -67,3 +67,9 @@ let fullDate = "Сегодня: " + myDate.getDate() +
 ", " + days[myDate.getDay()];
 console.log(fullDate);
 console.log(hour + ":" + minute + ":" + second);
+
+let days = 7;
+  let date = new Date();
+  let res = date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+  date = new Date(res);
+  alert(date);
