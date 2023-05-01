@@ -18,11 +18,12 @@
 
       console.log(male)
     }
-    function filter() {
-      let somePeople = people.filter(item => item.id >= 0);
+    function filter(filterCallback) {
+      return people.filter(filterCallback);
     }
-    
     console.log(filter([3, -4, 1, 9], isPositive)); 
+    console.log(filter([3, -4, 1, 9], isMale)); 
+    
     
     const people = [
        {name: 'Глеб', gender: 'male'},
@@ -37,11 +38,12 @@
 
 function showTime() {
    let currentDate = new Date();
-	let timerId = setInterval(() => alert(new Date), 3000);
+	let timerId = setInterval(() => new Date, 3000);
+  console.log(timerId)
 }
 
 function delayForSecond(callback) {
-  setTimeout(cakkback, 1000 * 10);
+  setTimeout(callback, 1000 * 10);
   callback();
 }
 
