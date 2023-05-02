@@ -16,7 +16,7 @@
     function isMale() {
       const male = (people.findIndex(gender => people.gender == 'male'));
 
-      console.log(male)
+      return male
     }
     function filter(filterCallback) {
       return people.filter(filterCallback);
